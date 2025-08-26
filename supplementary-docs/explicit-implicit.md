@@ -54,6 +54,7 @@ Date Session Originated: Unknown; data loss
 | **Implicit Canon Behavior** | **Quarantine alerts must be accessible** | Derived from AAA accessibility canon and explicit Bulk Parser error handling. | 2025-08-23 |
 | **Implicit Canon Behavior** | **CrossRef polite identification preserved without headers** | Derived from explicit CORS canon; implies `?mailto=` param usage is mandatory. | 2025-08-23 |
 
+
 ---
 
 
@@ -73,10 +74,6 @@ Date Session Originated: Unknown; data loss
 
 ---
 
-
-Perfect. Here’s a **Canonical Behavior Display** table synthesizing everything from the Playbook, enriched bundle scan, and chat-logged decisions.
-
----
 #### DATE STAMPS ARE MOST ACCURATE
 # SilentStacks — Canonical Behavior Display
 
@@ -150,7 +147,7 @@ Perfect. Here’s a **Canonical Behavior Display** table synthesizing everything
 |---------------------------------------------|-------------------------|-------------------------|-------------------|----------------------|
 |                                             | AAA Accessibility (WCAG 2.2, 7:1 contrast) | UI tokens must enforce color, focus order, labels | Known from SecurityAnalysisV1.md and transcripts, but precise arrival date not preserved due to catastrophic flush | Unknown |
 
-
+---
 
 **Date Session Originated: Unknown; data loss**
 
@@ -232,6 +229,7 @@ Date Session Originated: 2025-08-20
 | 12 | **CSV-only; XLSX/Excel forbidden.** | Ensures interoperability + stability, avoids dependency. | Derived from audit false positives on XLSX; canon clarified “CSV only.” | 2025-08-20 |
 
 ---
+
 | Explicit Canon Behavior                                                                                                                                                                | Implicit Canon Behavior                                                                                                      | How Derived                                                                                                | Date Stamp of Arrival |
 | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------- | --------------------- |
 | All critical docs (Playbook, Spin-Up, Wind-Down, Emergency, Operational Stability, Packaging Suite) must always be delivered complete and production-ready — no stubs, no placeholders | Generated docs missing sections are classified as P0 failures                                                                | From user mandate during state extraction sessions and repeated frustration when receiving incomplete docs | 2025-08-22            |
