@@ -1,5 +1,6 @@
 
 Prompt Given to 6 different AI sessions. Note difference in responses to the ***same prompting***.  Also note that each table is wholly different. Also interesting some behaviors I labelled as explicit have become implicit.
+
 # Canonical Behavior Display
 Print out tabularly
 1. Explicit canon behavior
@@ -7,7 +8,7 @@ Print out tabularly
 3. How the implicit and explicit behaviors were derived
 4. Date stamp of when these behaviors arrived
 
-# Header of table must be "Date Session Originated:" (ISO format). If no date available print "Date Session Originated: Unknown; data loss"
+### Header of table must be "Date Session Originated:" (ISO format). If no date available print "Date Session Originated: Unknown; data loss"
 ---
 
 Date Session Originated: Unknown; data loss
