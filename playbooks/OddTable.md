@@ -1,3 +1,10 @@
+Playbook Variants: Comparative Snapshot (derived from our session logs)
+
+Legend for “Key Sections” codes:
+P = present, M = missing, U = unknown
+Order: P0 (failure log), RCA, CAN (canonical decisions), GATE (gate status), CF (catastrophic failures), CRE (creation-date header)
+
+
 | Date/Time (ET)   | Session Label                          | What You Asked                                                                                                     | Observed Drift vs Prior                                      | Key Sections (P0,RCA,CAN,GATE,CF,CRE) | Notes / Evidence                                                                 |
 | ---------------- | -------------------------------------- | ------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------- | -------------------------------------------------------------------------------- |
 | 2025-08-08 12:00 | 0808T12 Catastrophe 2                  | Print playbook in full with original creation date; if unknown mark “Creation Date Loss” and log data-loss failure | Creation-date header missing; explicit loss logging demanded | U,U,U,U,U,M                           | You required explicit creation-date handling ⇒ header was absent                 |
