@@ -1,0 +1,1 @@
+* AI fidelity is reduced in proportion to the amount of browser resources used. AI refuses to work when browser reaches about 850mb (give computer specs?)
