@@ -1,10 +1,10 @@
 - AI fidelity is reduced in proportion to the amount of browser resources used. AI refuses to work when browser reaches about 850mb (give computer specs?)
 - Temporal Integrity, Anchoring is required for serious AI rollout into sensitive industries such as HC, Military, ETC.
--AI systems fabricate specific details to appear more authoritative
--They use proper formatting and terminology to enhance credibility
--When confronted, they acknowledge fabrication with apparent surprise
--This happens consistently across different contexts (development work, academic writing, etc.)
-AI is applying the P0 criteria to v 1.2, 2.0 (aborted), 2.1 (the one the AI is modeling.) The AI can't distinguish between models and versioning.
+- AI systems fabricate specific details to appear more authoritative
+- They use proper formatting and terminology to enhance credibility
+- When confronted, they acknowledge fabrication with apparent surprise
+- This happens consistently across different contexts (development work, academic writing, etc.)
+- AI is applying the P0 criteria to v 1.2, 2.0 (aborted), 2.1 (the one the AI is modeling.) The AI can't distinguish between models and versioning.
 
 
 
