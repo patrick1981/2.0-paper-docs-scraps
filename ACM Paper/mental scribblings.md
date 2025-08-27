@@ -1,4 +1,5 @@
 - AI fidelity is reduced in proportion to the amount of browser resources used. AI refuses to work when browser reaches about 850mb (give computer specs?)
+- Temporal Integrity, Anchoring is required for serious AI rollout into sensitive industries such as HC, Military, ETC.
   
 
 
