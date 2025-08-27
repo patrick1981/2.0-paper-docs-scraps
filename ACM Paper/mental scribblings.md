@@ -4,7 +4,7 @@
 -They use proper formatting and terminology to enhance credibility
 -When confronted, they acknowledge fabrication with apparent surprise
 -This happens consistently across different contexts (development work, academic writing, etc.)
-
+AI is applying the P0 criteria to v 1.2, 2.0 (aborted), 2.1 (the one the AI is modeling.) The AI can't distinguish between models and versioning.
 
 
 
