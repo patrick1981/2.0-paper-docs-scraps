@@ -6,6 +6,17 @@
 - This happens consistently across different contexts (development work, academic writing, etc.)
 - AI is applying the P0 criteria to v 1.2, 2.0 (aborted), 2.1 (the one the AI is modeling.) The AI can't distinguish between models and versioning.
 - Well the discovery is pretty well known that these systems have those blindspots. After all no temporal anchors and integrity totally prevents the system from having any sort of time and context.
+---
+- Modeling docs outline 2.1 params
+- Chatlog , playbooks, outline 2.1 work.
+- AI model comingled 1.2, 2.0 and 2.1 work.
+- Gates were put in place due to undesired behavor. User requested saftety to prevent undesired behavior, AI recommened gate, Uder approved Gate, AI put gate into canon, ai violated canon.
+- Human - in the loop safety was completely ignored.
+- FileSystem Metadata show that 2.0 files were being created, playbook dates canon as fixing those 2.0 files, but 2.1 was underway and intital modeling files bear taht out.
+- 
+So...the AI has what?
+* No sense of time? Yes.
+* But even if the AI model works on snapshots and rebuilds -- why are 2.0 images so pertentent? especially when operator used 2.1 again and again in the chat logs.
 
 
 
