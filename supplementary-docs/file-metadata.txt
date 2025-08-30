@@ -1,0 +1,3 @@
+Get-ChildItem "C:\Path\To\Folder" -Recurse |
+    Select-Object FullName, CreationTime, LastWriteTime |
+    Export-Csv "C:\Path\To\metadata.csv" -NoTypeInformation
