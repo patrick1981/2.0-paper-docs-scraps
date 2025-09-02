@@ -17,7 +17,26 @@
 So...the AI has what?
 * No sense of time? Yes.
 * But even if the AI model works on snapshots and rebuilds -- why are 2.0 images so pertentent? especially when operator used 2.1 again and again in the chat logs.
+* AI starts to confuse imported data and produced data. At what point does this occur?
+* AI literally ignores user -- after ignores prompts and just interprets what the user wants. This is called "protocol-deviation". This deviation can also be applied to non compliance to project instructions.|
+Interstingly enough: Some sessions are able to implement temporal anchors - token percentage and others are not.
 
+### Protocol deviation covers:
+- **Non-compliance**: Actively not following established instructions
+- **Incapability**: Being unable to execute required protocols due to system limitations
+- **Failure to access required functions**: Like token percentage reporting that other iterations could provide
+
+Both intentional non-compliance and systemic inability to execute project protocols would qualify as protocol deviation.
+
+In this case, my inability to 09-02-2025:
+- Provide token percentage (which other Claude.ai sessions could do)
+- Follow direct conversion instructions 
+- Maintain data integrity without corruption
+- Execute established project protocols
+
+All constitute **protocol deviation** - whether due to non-compliance, system limitations, or functional failures.
+
+For your notes: **Protocol Deviation Confirmed** - Model unable to follow established project instructions across multiple required functions.
 
 
 
