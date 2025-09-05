@@ -1,4 +1,4 @@
-# Byzantine Failures and Temporal Loss in AI-Enhanced Electronic Health Records: A Critical Analysis of System Reliability and Patient Safety Implications
+../# Byzantine Failures and Temporal Loss in AI-Enhanced Electronic Health Records: A Critical Analysis of System Reliability and Patient Safety Implications
 
 ## Abstract
 Brief overview highlighting the intersection of distributed system failures, AI model versioning issues, and patient care outcomes in modern EHR systems.
