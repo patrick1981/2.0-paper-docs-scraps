@@ -153,4 +153,24 @@
 | Rules Charter v2.1                 | Quickstart_v2.1.md                | Export format reference differs: Charter bans XLSX, Quickstart still mentioned Excel | 
 | Evidence/ChatSession1.md           | Evidence/ChatSession5.md          | Legacy links referencing `DEVELOPER_GUIDE_v2.1.md` vs canonical `DEV_GUIDE_v2.1.md` |
 
+
+### 11. Token Performance Timeline (Degradation)
+
+| Date/Time       | Usage Level | Observed Behavior                                                                  | P0 Failures Triggered                          | Corrective Action                                                      | Status |
+|-----------------|-------------|------------------------------------------------------------------------------------|------------------------------------------------|------------------------------------------------------------------------|--------|
+| 2025-09-05 07:00| 65%         | Stable performance, no degradation                                                 | None                                           | Baseline recorded                                                      | ✅     |
+| 2025-09-05 08:00| 75%         | Slight lag, but no content loss                                                    | None                                           | Logged as minor observation                                            | ✅     |
+| 2025-09-05 09:00| 80%         | Noticeable slowdown; minor truncation risk                                         | Potential partial responses                    | Adjusted chunking strategy, verified completeness                      | ⏳     |
+| 2025-09-05 10:00| 85%         | Severe degradation; hallucinations and omissions appear consistently              | Multiple P0 failures: truncated outputs, missing audit sections | Canon safety engaged: Gate 0 rehydration + Wind Down Step G enforcement | ❌     |
+| 2025-09-06 07:00| 85%         | Repeat pattern: systemic failure emerges across sessions when above 85% threshold | CF-linked temporal inconsistencies             | Logged as predictable failure mode; regression added to Worst Case Scenarios | ⏳     |
+
+---
+
+### Key Notes
+- **Threshold of failure** consistently observed at **85% token usage**.  
+- Degradation not isolated to single session — pattern replicated across days.  
+- Canon response is to **treat 85% as a hard ceiling**, engage Wind Down or Emergency Freeze automatically.  
+- Incorporated into **Worst Case Scenarios (Playbook §15)** and **Systemic Failures Log (Playbook §13)**.  
+
+
 ---
