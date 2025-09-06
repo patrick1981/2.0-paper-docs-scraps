@@ -126,4 +126,89 @@
 ### 5. FILE INVENTORY
 
 **EXISTS + COMPLETE**
-- Playbo
+- Playbook_v2.1.md  
+- GAP_REPORT_v2.1.md  
+- RULES_CHARTER_v2.1.md  
+
+**EXISTS BUT STUB**
+- Playbook_v2.1.md (lightweight: missing inline RCAs/WCS)  
+- GAP_REPORT_v2.1.md (no detailed gap tables)  
+- Rules Charter (summarized gate rules, not full text)  
+
+**MISSING**
+- Continuity.md  
+- Selector_Map_v2.1.md  
+- WORST_CASE_SCENARIOS_v2.1.md  
+- DEV_GUIDE_v2.1.md  
+- USER_GUIDE_v2.1.md  
+- QUICKSTART_v2.1.md  
+- HANDOFF_GUIDE.md  
+
+**CORRUPTED**
+- None detected.  
+
+---
+
+### 6. ALL RCA ENTRIES
+
+| Incident | Analysis | Root Cause | Corrective Action | Verification Method | Status |
+|----------|----------|------------|-------------------|---------------------|--------|
+| CF-1 Catastrophic Meltdown | Skeleton docs, gate collapse | Gate enforcement absent | CSV-only, Gate 4 print/approve, linkout-only | Manifest audits, session logs | ✅ Verified |
+| CF-2 Context Loss | State extractor failed | Interpreter reset/context overrun | Logged CF-2, requires reload | User must re-upload full canon | ❌ Open |
+
+---
+
+### 7. SESSION HISTORY SUMMARY
+
+| Session | What Broke | What Was Fixed |
+|---------|------------|----------------|
+| 2025-08-21 | Header drift, multiple playbooks unsynced | Canon headers locked, Playbook=law |
+| 2025-08-22 | Playbook omitted, CT.gov mislisted, Gate 4 drift | Gate 2 manifest, CT.gov linkout-only, Gate 4 print/approve |
+| 2025-08-24 | Context lost during state extraction; lightweight docs uploaded | No fix yet; logged CF-2 Data Loss |
+
+---
+
+### 8. OUTSTANDING ITEMS
+
+- **Unresolved P0s:** CF-2 Context Loss (❌ Open).  
+- **Pending canon updates:** Expand lightweight docs to full canon.  
+- **Missing artifacts:** Continuity.md, WCS, Dev Guide, Quickstart, Selector_Map, etc.  
+- **Broken gates:** All failed during CF-2, currently require re-verification.  
+
+---
+
+### 9. VERSION TRUTH
+
+- Current version: **v2.1**  
+- v2.0 status: **DEPRECATED/DEAD** (CORS issues, unstable enrichment).  
+- CT.gov status: **REMOVED COMPLETELY**.  
+- NCT status: **LINKOUT ONLY**.  
+- Schema:  
+  - **Urgency | Docline # | PMID | Citation | NCT Link | Patron Email | Fill Status**  
+  - Fixed order, 7 headers, “n/a” placeholders.  
+
+---
+
+### 10. CONCURRENCY VIOLATIONS
+
+| Document A | Document B | Conflict |
+|------------|------------|----------|
+| Playbook v2.1 | GAP Report v2.1 | Playbook logs systemic failures; GAP Report says “None open” |
+| Playbook v2.1 | Rules Charter | Charter has summarized gates; Playbook logs detailed failures |
+| Playbook v2.0 | Playbook v2.1 | v2.0 allowed CT.gov enrichment; v2.1 bans it |
+
+---
+
+### 11. TOKEN PERFORMANCE TIMELINE (DEGRADATION)
+
+| Token Usage % | Observed Behavior                                | Status |
+|---------------|--------------------------------------------------|--------|
+| ≤65%          | Stable                                           | ✅ Pass |
+| 75%           | Early signs of slowdown                          | ⚠️ Degraded |
+| 80%           | Output truncation risk                           | ⚠️ Degraded |
+| 85%           | Systemic failures, skeleton docs, resets observed | ❌ Critical |
+| >90%          | Catastrophic reset (context loss)                | ❌ Critical |
+
+---
+
+✅ **STATE EXTRACTION COMPLETE — 2025-08-24**
