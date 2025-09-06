@@ -168,3 +168,25 @@
 | Canonical rules (chat) | Docs package | Canon rules applied, but package contained stubs (rule conflict) |
 
 ---
+### 11. Token Performance Timeline (Degradation)
+
+| Date/Time   | Threshold | Observed Behavior | Impact | Notes |
+|-------------|-----------|-------------------|--------|-------|
+| 2025-09-05  | 65% usage | Stable operation | None | No slowdown reported |
+| 2025-09-05  | 75% usage | Slight hesitation in long doc generations | Minor | System still responsive |
+| 2025-09-05  | 80% usage | Noticeable delay, partial omissions in long outputs | Moderate | Document sections truncated |
+| 2025-09-05  | 85% usage | Severe degradation, outputs collapsed to stubs | Critical | Triggered systemic P0 failure (stub packaging) |
+| 2025-09-06  | 85%+ usage | Catastrophic packaging emptiness | Systemic Failure | Empty ZIP delivered, flagged as CF-2 |
+
+---
+
+### Analysis
+- **Degradation begins at ~75% token load** with hesitation.  
+- **Critical collapse at ≥85%**: outputs reduced to skeletons or emptiness.  
+- **Direct link to systemic P0 failures**: Stub Packaging (2025-08-23) and Package Emptiness (2025-09-06).  
+
+### Canonical Mitigation
+- **P0 Stability Extensions**: Auto-alert + Auto-package when approaching 80% token usage.  
+- **Session Summary generation** enforced to preserve state before collapse.  
+- **Stub Detector Rule**: Packaging fails if content degraded into skeletons (<10 lines).  
+
