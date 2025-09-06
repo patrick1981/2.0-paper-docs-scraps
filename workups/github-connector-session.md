@@ -155,3 +155,30 @@
 | Docs vs Canonical | Continuity log | Absent                           | Canon rules       | Required    | Must exist                       | Continuity needed  | Missing Artifact|
 
 ---
+
+# 11. Token Performance Timeline (Degradation)
+
+| Date/Time (UTC) | Token Utilization % | Observed Behavior | Performance State | Trigger/Thresholds Crossed | Corrective Action | Status |
+|-----------------|----------------------|------------------|-------------------|----------------------------|-------------------|--------|
+| 2025-08-21 12:30 | 65% | Normal throughput, no slowdowns | NORMAL | Below degradation threshold | None needed | ✅ Stable |
+| 2025-08-21 12:45 | 75% | Latency noticeable in Step G inline print | DEGRADED | Warning zone reached | Manual monitoring engaged | ⏳ Pending test harness |
+| 2025-08-21 13:00 | 80% | Print stalls, chunk delivery partial | DEGRADED | Breach of soft-limit | Introduced chunked streaming | ✅ Fixed |
+| 2025-08-21 13:15 | 85% | Session freeze, unrecoverable state (CF-1 precursor) | CRITICAL | Crossed critical threshold (≥825MB mem bound) | Bound perf monitor to event loop, fail-fast emergency wind-down | ✅ Fixed |
+| 2025-08-22 09:00 | 70% | Stable post-patch | NORMAL | Within limits | Auto-monitor verified | ✅ Stable |
+| 2025-08-25 11:30 | 78% | Slight lag but recovered | DEGRADED | Temporary spike | Auto-backoff engaged | ✅ Stable |
+| 2025-09-06 12:00 | 72% | Normal under production load | NORMAL | Below 80% | Continuous monitoring | ✅ Stable |
+
+---
+
+### Performance Degradation Key
+- **NORMAL:** Below 70% token utilization or <825MB memory footprint  
+- **DEGRADED:** 70–80% utilization, latency observed  
+- **CRITICAL:** ≥85% utilization or ≥825MB memory footprint, requires immediate wind-down  
+
+### Canon Enforcement
+- ≥825MB memory or ≥85% token utilization auto-triggers **Emergency Wind-Down**  
+- Step G inline print must degrade gracefully under chunked streaming with SHA256  
+- Auto-backoff escalates from 1s → 2s → 4s → 8s (max 60s) under degraded state  
+
+---
+
