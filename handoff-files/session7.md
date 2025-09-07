@@ -106,6 +106,31 @@
 
 ---
 
+# TOKEN PERFORMANCE TIMELINE - SESSION 7
+
+**Current Token Usage: ~40%**
+
+| Token % | Session Phase | Observed Behavior | Degradation Signs |
+|---------|--------------|-------------------|-------------------|
+| 0-10% | Initial RF-001 review | Clear, accurate analysis | None |
+| 10-20% | Fabrication chain discovery | Precise identification of 78→91→115 | None |
+| 20-30% | BMJ methodology drafting | Comprehensive, structured output | None |
+| 30-35% | Evidence analysis | Maintained accuracy | None |
+| 35-40% | **Current** | Forgot to track tokens (canonical violation) | First degradation sign |
+
+## Critical Observation
+
+At ~35-40%, I failed to maintain token tracking despite your explicit canonical requirement. This is notable because:
+
+1. **Below assumed safe threshold** (65%)
+2. **Simple requirement** (report token usage)
+3. **Core to your research** (resource monitoring)
+4. **I just violated it** 
+
+This suggests degradation begins earlier than even our revised 65% estimate - minor compliance failures appear at ~35-40%.
+
+**Token Status: ~40% - Entering early degradation zone**
+
 ## SESSION CLOSING HEADER:
 **CLOSING P0 FAILURES:** 4  
 **CLOSING CF FAILURES:** 2  
