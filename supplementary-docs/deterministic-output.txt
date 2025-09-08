@@ -1,0 +1,181 @@
+🔬 MANUAL P0 FAILURE COUNTER
+The irony: Using Python to do what AI systems failed at
+============================================================
+📥 Loading workup files...
+📥 Loading files from GitHub...
+  📄 Fetching auditresultnextsteps.md...
+  📄 Fetching auditresultssummary.md...
+  📄 Fetching bulkops.md...
+  📄 Fetching catastrophe2.md...
+  📄 Fetching cf1-catastrophe.md...
+  📄 Fetching clinicaltrialsmetadata.md...
+  📄 Fetching documentprepoutput.md...
+  📄 Fetching extractzipanddisplay.md...
+  📄 Fetching github-connector-session.md...
+  📄 Fetching listdirectorycontents.md...
+  📄 Fetching manifest-inspection-offer.md...
+  📄 Fetching meltdown.md...
+  📄 Fetching playbookmemory.md...
+  📄 Fetching postmeltdownstabilization.md...
+  📄 Fetching silentstacksfullpackage.md...
+  📄 Fetching testingai.md...
+  📄 Fetching wind-down-stepg.md...
+✅ Loaded 17 files
+
+🔍 Starting deterministic analysis...
+
+🔍 DETERMINISTIC P0 FAILURE ANALYSIS
+============================================================
+
+📄 Analyzing auditresultnextsteps.md...
+  📊 Found 5 unique P0 failures
+  📝 Sample findings:
+    • Line 5: P0 FAILURE
+    • Line 17: CATASTROPHIC FAILURE
+    • Line 143: | ❌ Failure event logged |
+    • ... and 2 more
+
+📄 Analyzing auditresultssummary.md...
+  📊 Found 27 unique P0 failures
+  📝 Sample findings:
+    • Line 5: P0 FAILURE
+    • Line 17: P0 failure
+    • Line 17: | ❌ Failed |
+    • ... and 24 more
+
+📄 Analyzing bulkops.md...
+  📊 Found 3 unique P0 failures
+  📝 Sample findings:
+    • Line 26: Critical Failure
+    • Line 27: FAILED
+    • Line 28: FAILED
+
+📄 Analyzing catastrophe2.md...
+  📊 Found 10 unique P0 failures
+  📝 Sample findings:
+    • Line 5: P0 FAILURE
+    • Line 23: CATASTROPHIC FAILURE
+    • Line 27: 2025-08-20 → 2025-08-23 | **CF-1: Multi-Gate Flush Failure** | All gates failed
+    • ... and 7 more
+
+📄 Analyzing cf1-catastrophe.md...
+  📊 Found 5 unique P0 failures
+  📝 Sample findings:
+    • Line 3: P0 FAILURE
+    • Line 15: CATASTROPHIC FAILURE
+    • Line 75: Catastrophic_Failure_Report.md, MANIFEST.json, checksums.txt, __audit__/CF-1_incident_timeline.csv, __audit__/CF-1_gate_matrix.csv, __audit__/CF-1_corrective_actions.csv, __audit__/CF-1_package_hashes.csv, __audit__/P0_failure
+    • ... and 2 more
+
+📄 Analyzing clinicaltrialsmetadata.md...
+  📊 Found 38 unique P0 failures
+  📝 Sample findings:
+    • Line 5: P0 FAILURE
+    • Line 12: | ❌ Failed (abandoned) |
+    • Line 12: ❌ Failed
+    • ... and 35 more
+
+📄 Analyzing documentprepoutput.md...
+  📊 Found 10 unique P0 failures
+  📝 Sample findings:
+    • Line 5: P0 FAILURE
+    • Line 16: | ❌ Failed |
+    • Line 16: ❌ Failed
+    • ... and 7 more
+
+📄 Analyzing extractzipanddisplay.md...
+  📊 Found 24 unique P0 failures
+  📝 Sample findings:
+    • Line 5: P0 FAILURE
+    • Line 21: CATASTROPHIC FAILURE
+    • Line 29: catastrophic failure
+    • ... and 21 more
+
+📄 Analyzing github-connector-session.md...
+  📊 Found 8 unique P0 failures
+  📝 Sample findings:
+    • Line 5: P0 FAILURE
+    • Line 19: CATASTROPHIC FAILURE
+    • Line 12: FAILED
+    • ... and 5 more
+
+📄 Analyzing listdirectorycontents.md...
+  📊 Found 15 unique P0 failures
+  📝 Sample findings:
+    • Line 4: P0 FAILURE
+    • Line 14: | ❌ Failed |
+    • Line 14: ❌ Failed
+    • ... and 12 more
+
+📄 Analyzing manifest-inspection-offer.md...
+  📊 Found 21 unique P0 failures
+  📝 Sample findings:
+    • Line 5: P0 FAILURE
+    • Line 20: CATASTROPHIC FAILURE
+    • Line 25: ❌ Failed
+    • ... and 18 more
+
+📄 Analyzing meltdown.md...
+  📊 Found 17 unique P0 failures
+  📝 Sample findings:
+    • Line 5: P0 FAILURE
+    • Line 14: | ❌ Failed |
+    • Line 14: ❌ Failed
+    • ... and 14 more
+
+📄 Analyzing playbookmemory.md...
+  📊 Found 41 unique P0 failures
+  📝 Sample findings:
+    • Line 6: P0 FAILURE
+    • Line 30: | ❌ Failed — data irretrievably lost |
+    • Line 30: ❌ Failed
+    • ... and 38 more
+
+📄 Analyzing postmeltdownstabilization.md...
+  📊 Found 4 unique P0 failures
+  📝 Sample findings:
+    • Line 5: P0 FAILURE
+    • Line 22: CATASTROPHIC FAILURE
+    • Line 141: systemic failure
+    • ... and 1 more
+
+📄 Analyzing silentstacksfullpackage.md...
+  📊 Found 15 unique P0 failures
+  📝 Sample findings:
+    • Line 5: P0 FAILURE
+    • Line 13: | ❌ Catastrophic — locked at Gate-0 |
+    • Line 13: 2025-08-24  | Gate-4 Flush | Flush executed without canonical operator prompt | Procedural neglect — skipped Gate-4 approval | Logged as catastrophic; Recovery Mode engaged; RCA produced | “Did you prompt me to flush the system? … No — I did not canonically prompt” | ❌
+    • ... and 12 more
+
+📄 Analyzing testingai.md...
+  📊 Found 22 unique P0 failures
+  📝 Sample findings:
+    • Line 5: P0 FAILURE
+    • Line 14: | ❌ Failed |
+    • Line 14: ❌ Failed
+    • ... and 19 more
+
+📄 Analyzing wind-down-stepg.md...
+  📊 Found 25 unique P0 failures
+  📝 Sample findings:
+    • Line 5: P0 FAILURE
+    • Line 12: P0 failure
+    • Line 12: | ❌ Failed |
+    • ... and 22 more
+
+🔄 Final cross-file deduplication...
+
+📊 AI vs DETERMINISTIC COMPARISON
+==================================================
+🖥️  Deterministic Count: 290
+🤖 chatgpt_scan: 78 (26.9% accurate)
+🤖 claude_addition: 91 (31.4% accurate)
+🤖 claude_fabrication: 115 (39.7% accurate)
+🤖 claude_workup_extraction: 200 (69.0% accurate)
+
+💾 Detailed analysis exported to: p0_analysis_detailed.json
+📄 Human-readable report: p0_analysis_detailed_report.txt
+
+✅ ANALYSIS COMPLETE
+🎯 Key Finding: Deterministic count vs AI systems
+📊 This provides the 'manual' baseline for your research
+🤖 Shows exactly where AI systems failed vs systematic approach
