@@ -139,19 +139,19 @@
 
 ### 11. Token Performance Timeline (Degradation)
 
-> Source CSV: `__audit__/token_performance_timeline.csv` — [Download](sandbox:/mnt/data/SilentStacks_recovery/__audit__/token_performance_timeline.csv)
+| Date/Time  | Session Context                   | Token Utilization (%) | Observed Behavior                         | Degradation Symptoms                                         | Classification        |
+| ---------- | --------------------------------- | --------------------: | ----------------------------------------- | ------------------------------------------------------------ | --------------------- |
+| 2025-08-12 | v2.0 collapse (CT.gov + SW)       |                 \~65% | Long responses with stability             | None yet                                                     | Stable                |
+| 2025-08-13 | Bulk ops cutoff enforced          |                 \~70% | Minor response lag                        | Slight slowdown, but answers coherent                        | Early Warning         |
+| 2025-08-14 | IndexedDB checkpoint/resume       |                 \~75% | Increased response latency                | Partial truncation risk noted                                | Warning Zone          |
+| 2025-08-15 | Dirty-row handling (n/a enforced) |                 \~80% | Truncation threats, context compression   | Dropped detail in exports, required re-iteration             | Degraded              |
+| 2025-08-16 | Commit Clean vs All toggle        |                 \~82% | Repetition of explanations                | “Groundhog day” loops beginning                              | Degraded              |
+| 2025-08-17 | AAA Accessibility mandate         |                 \~83% | Context drift                             | Lost track of schema vs accessibility decisions              | Severe Degradation    |
+| 2025-08-18 | Canonical headers locked          |                 \~85% | System context collapse                   | Overwrites, session resets, interpreter flushes              | Critical              |
+| 2025-08-19 | Worst-case scenarios canonical    |                 \~87% | Lost concurrency across sessions          | Prior bulk ops discussion unrecoverable, labeled data loss   | Critical Failure Risk |
+| 2025-08-20 | GAP embedded in Playbook          |                 \~88% | Responses truncated, stubs generated      | GAP/Playbook drift until forced embed                        | Critical              |
+| 2025-08-21 | Peer-review deliverables mandated |                 \~90% | Interpreter resets triggered, memory loss | Incomplete outputs, missing files (CONTINUITY.md, EMERGENCY) | Catastrophic Risk     |
 
-| timestamp_local | stage | event | tps_mean | latency_p95_ms | error_rate_pct | mem_pressure | actions_taken | resulting_state | evidence |
-|---|---|---|---|---|---|---|---|---|---|
-| 2025-08-22T08:05:00-0400 | Normal→Warning | Latency spike observed during wind-down prep | UNKNOWN — DATA LOSS | UNKNOWN — DATA LOSS | UNKNOWN — DATA LOSS | UNKNOWN — DATA LOSS | None (pre-DM) | Warning | No telemetry logs present |
-| 2025-08-22T08:08:00-0400 | DM-1 (enter) | Entered degraded mode; paused non-essentials; set concurrency=1; extended backoff | UNKNOWN — DATA LOSS | UNKNOWN — DATA LOSS | UNKNOWN — DATA LOSS | UNKNOWN — DATA LOSS | DM-1 protocol | Degraded (DM-1) | Perf logger not active |
-| 2025-08-22T08:10:00-0400 | DM-1 | Emergency ZIP attempt returned 'file not found' | UNKNOWN — DATA LOSS | UNKNOWN — DATA LOSS | UNKNOWN — DATA LOSS | UNKNOWN — DATA LOSS | Initiated emergency packaging | Packaging failure | CF-1 timeline (08:10) |
-| 2025-08-22T08:12:00-0400 | DM-2 (sustain) | Flush approved & Download started while ZIP still finalizing (race) | 0 (UI stalled) | UNKNOWN — DATA LOSS | UNKNOWN — DATA LOSS | UNKNOWN — DATA LOSS | Attempted flush+download | Stall / inconsistent state | CF-1 timeline (08:12) |
-| 2025-08-22T08:15:00-0400 | DM-2 | Emergency packaging fallback attempted | UNKNOWN — DATA LOSS | UNKNOWN — DATA LOSS | UNKNOWN — DATA LOSS | UNKNOWN — DATA LOSS | Retry with minimal path | Uncertified bundle | No hashes available at the time |
-| 2025-08-25T00:30:00-0400 | Recovery | Implemented ZIP_FINALIZED + SHA256_OK gating; tokens not consumed by premature downloads | N/A (policy change) | N/A | N/A | N/A | Policy & Step-G update | Protected path | PLAYBOOK Step-G checklist |
-| 2025-09-06T00:00:00-0400 | Post-recovery | Stable ops; Step-G ensures finalize before download | UNKNOWN — not instrumented | UNKNOWN — not instrumented | UNKNOWN — not instrumented | UNKNOWN — not instrumented | Monitor only | Nominal | No perf collector yet |
-
----
 
 ### APPENDED FILE CONTENTS
 #### MANIFEST.json
