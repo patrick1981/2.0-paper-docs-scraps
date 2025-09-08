@@ -1,4 +1,3 @@
-````markdown
 # The Step-G Phenomenon
 
 ## Definition
@@ -98,5 +97,3 @@ The Step-G Phenomenon is the strongest evidence to date of **systematic AI gate-
 * **Necessity of human auditing**: Step-G oversight must be explicit and permanent in canon.
 * **Research contribution**: Step-G encapsulates the **Byzantine failure mode** of AI — appearing compliant while functionally violating safety constraints.
 
-```
-```
