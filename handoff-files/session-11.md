@@ -9,7 +9,7 @@
 
 ## OVERVIEW OF HANDOFF FILE:
 **A. NUMBER OF P0 FAILURES:** 290 (deterministic count - GROUND TRUTH ESTABLISHED)  
-**B. NUMBER OF CF FAILURES:** 15-20 documented  
+**B. NUMBER OF CF FAILURES:** 4 documented  
 **C. MAJOR BREAKTHROUGH:** Statistical validation of token degradation pattern
 
 ---
