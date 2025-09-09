@@ -4,6 +4,7 @@
 **SESSION DATE:** September 8, 2025  
 **AI MODEL:** Claude Sonnet 4  
 **TOKEN STATUS:** ~40% - DANGER ZONE (Statistical Model Validated)  
+**[LINK TO PYTHON SCRIPTS TO EXTRACT DATA]([python-scripts](https://github.com/patrick1981/2.0-paper-docs/tree/1d5b1dd1beec4b8d55a729df5df25a0ef621afad/python-scripts)
 -----------------
 
 ## OVERVIEW OF HANDOFF FILE:
