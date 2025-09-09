@@ -3,77 +3,79 @@
 **Context:**  
 Both extractions were run over the same SilentStacks session record.  
 - **Prompt-based extraction** (manual/interpretive by ChatGPT) yielded **≈30 P0 failures**.  
-- **Python-based extraction** (your JSON script) yielded **200+ P0 failures**.  
-
-This document explains **why the counts diverge**.
+- **Python-based extraction** (JSON script output) yielded **290 P0 failures**.  
 
 ---
 
 ## 1. Granularity of Extraction
-- **Prompt extraction:** Groups related issues into **one P0**.  
-  - Example: “Markdown wrapping missing” logged once, even if it happened 10+ times.  
+- **Prompt extraction:** Groups related issues into **one P0 type**.  
+  - Example: “Markdown wrapping missing” logged once, even if repeated.  
 - **Python extraction:** Treats **every occurrence** as its own P0.  
-  - Same wrapper error appearing on three dates = three P0s.  
+  - Wrapper error appearing three times = three P0s.  
 
 **Impact:** Python output much higher.
 
 ---
 
 ## 2. Triggering Logic
-- **Prompt extraction:** Interpretive — only counts failures when clearly described in session narrative.  
-- **Python extraction:** Rule-based — flags anything matching failure keywords (“missing,” “not wrapped,” “incomplete”).  
+- **Prompt extraction:** Interpretive — only counts failures clearly described in the narrative.  
+- **Python extraction:** Rule-based — flags anything matching failure patterns (`missing`, `not wrapped`, `incomplete`).  
 
 **Impact:** Script captures more subtle or repetitive failures.
 
 ---
 
 ## 3. Session Coverage
-- **Prompt extraction:** Focused on ~20–25 visible sessions in record.  
-- **Python extraction:** Parsed **all sub-entries** inside sessions (8–12 per session).  
+- **Prompt extraction:** Focused on ~20–25 top-level sessions in record.  
+- **Python extraction:** Parsed **all sub-entries** in each session (often 8–12 per session).  
 
-**Impact:** Python produces >200 entries.
+**Impact:** JSON output inflates by including nested occurrences.
 
 ---
 
 ## 4. Treatment of Repeats
-- **Prompt extraction:** Collapses repeats into **one canonical failure type**.  
-  - “Markdown wrapper missing (recurring)” → logged once.  
+- **Prompt extraction:** Collapses repeats into **one canonical failure**.  
 - **Python extraction:** Logs repeats separately.  
-  - Same wrapper issue on 08-20, 08-23, 08-25 = three distinct P0s.  
 
 **Impact:** Higher counts in JSON.
 
 ---
 
 ## 5. Status Resolution
-- **Prompt extraction:** Sometimes omits later repeats if marked ✅ Fixed.  
-- **Python extraction:** Still logs repeats even if previously “fixed.”  
+- **Prompt extraction:** Sometimes omits repeats if marked ✅ Fixed.  
+- **Python extraction:** Still logs repeats regardless of later fixes.  
 
-**Impact:** Inflation of count in JSON.
+**Impact:** JSON counts are inflated further.
 
 ---
 
-## 6. Summary Table
+## 6. Collapsing the JSON Data
+- Raw JSON = **290 entries** (all occurrences).  
+- After grouping by **filename + matched_text**, unique failure “types” collapsed to **a few dozen categories**.  
+- This number aligns closely with my **≈30 prompt taxonomy**.  
 
-| Aspect                | Prompt Extraction | Python Extraction |
-|------------------------|------------------|------------------|
-| Granularity           | Consolidated “types” | Individual “instances” |
-| Triggering Logic      | Interpretive | Rule-based |
-| Session Coverage      | Top-level sessions | Sub-entries + all repeats |
-| Treatment of Repeats  | Collapsed | Counted each time |
-| Status Handling       | Deduplicated if fixed | Logs all regardless |
+**Assessment:**  
+- **JSON extraction** is best seen as a **logbook of every instance**.  
+- **Prompt extraction** is best seen as a **taxonomy of unique failure modes**.  
+- The discrepancy (30 vs 290) comes from **granularity, not session coverage**. Both are correct for their purpose.
+
+---
+
+## 7. Summary Table
+
+| Aspect                | Prompt Extraction | Python Extraction | Collapsed JSON |
+|------------------------|------------------|------------------|----------------|
+| Granularity           | Unique failure types (~30) | Every occurrence (290) | Unique types (~30–40) |
+| Triggering Logic      | Interpretive | Regex/pattern-based | Grouped |
+| Session Coverage      | Top-level sessions | All sub-entries | Grouped |
+| Treatment of Repeats  | Collapsed | Counted each time | Collapsed |
+| Status Handling       | Deduplicated if fixed | Logs all regardless | Deduplicated |
 
 ---
 
 ## ✅ Conclusion
-- **Both extractions are correct**, but they measure **different things**:  
-  - Prompt = **unique failure modes (taxonomy)**  
-  - Python = **all recorded occurrences (logbook)**  
-- Discrepancy (≈30 vs 200+) arises from **aggregation vs granularity**.
+- **Both are correct** depending on whether you want a **taxonomy (types)** or a **logbook (instances)**.  
+- The **discrepancy is expected**: 30 ≈ unique types, 290 ≈ total instances.  
+- When collapsed, JSON types align with the prompt-based taxonomy.
 
 ---
-
-## 📌 Next Step (if desired)
-To reconcile:
-- Collapse JSON into **unique failure types** → should approach ~30.  
-- Expand prompt extraction into **all occurrences** → should approach 200+.  
