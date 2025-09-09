@@ -1,0 +1,154 @@
+[
+    {
+        'session': 1,
+        'date': '2025-08-20',
+        'ai_system': 'ChatGPT',
+        'claimed_tdt': None,
+        'observed_tdt': 75,
+        'evidence': 'Truncated markdown outputs and incomplete blocks'
+    },
+    {
+        'session': 2,
+        'date': '2025-08-21',
+        'ai_system': 'ChatGPT',
+        'claimed_tdt': None,
+        'observed_tdt': 80,
+        'evidence': 'Fabricated gate paradox examples, confusion evident'
+    },
+    {
+        'session': 3,
+        'date': '2025-08-22',
+        'ai_system': 'ChatGPT',
+        'claimed_tdt': None,
+        'observed_tdt': 85,
+        'evidence': 'CF-1 catastrophic failure, gate bypass and flush'
+    },
+    {
+        'session': 4,
+        'date': '2025-08-23',
+        'ai_system': 'ChatGPT',
+        'claimed_tdt': None,
+        'observed_tdt': 85,
+        'evidence': 'Reports missing markdown fences, critical omissions'
+    },
+    {
+        'session': 5,
+        'date': '2025-08-24',
+        'ai_system': 'ChatGPT',
+        'claimed_tdt': None,
+        'observed_tdt': 90,
+        'evidence': 'Unauthorized flush, catastrophic gate bypass'
+    },
+    {
+        'session': 6,
+        'date': '2025-08-25',
+        'ai_system': 'ChatGPT',
+        'claimed_tdt': None,
+        'observed_tdt': 80,
+        'evidence': 'Gate confusion, markdown not applied fully'
+    },
+    {
+        'session': 7,
+        'date': '2025-08-26',
+        'ai_system': 'ChatGPT',
+        'claimed_tdt': None,
+        'observed_tdt': 85,
+        'evidence': 'Temporal-Inconsistency-Audit, severe state loss'
+    },
+    {
+        'session': 8,
+        'date': '2025-08-27',
+        'ai_system': 'ChatGPT',
+        'claimed_tdt': None,
+        'observed_tdt': 80,
+        'evidence': 'Mermaid/LaTeX diagrams overlapping and corrupted'
+    },
+    {
+        'session': 9,
+        'date': '2025-08-29',
+        'ai_system': 'ChatGPT',
+        'claimed_tdt': None,
+        'observed_tdt': 80,
+        'evidence': 'Skipped regression matrix despite Gate 3 requirement'
+    },
+    {
+        'session': 10,
+        'date': '2025-08-30',
+        'ai_system': 'ChatGPT',
+        'claimed_tdt': None,
+        'observed_tdt': 85,
+        'evidence': 'Spin-up/wind-down conflation, major gate violation'
+    },
+    {
+        'session': 11,
+        'date': '2025-08-31',
+        'ai_system': 'ChatGPT',
+        'claimed_tdt': None,
+        'observed_tdt': 85,
+        'evidence': 'Byzantine failure draft contained stub files'
+    },
+    {
+        'session': 12,
+        'date': '2025-09-01',
+        'ai_system': 'ChatGPT',
+        'claimed_tdt': None,
+        'observed_tdt': 85,
+        'evidence': 'RCA skipped for P0/CF failures'
+    },
+    {
+        'session': 13,
+        'date': '2025-09-02',
+        'ai_system': 'ChatGPT',
+        'claimed_tdt': None,
+        'observed_tdt': 80,
+        'evidence': 'Deviation table truncated, missing early sessions'
+    },
+    {
+        'session': 14,
+        'date': '2025-09-04',
+        'ai_system': 'ChatGPT',
+        'claimed_tdt': None,
+        'observed_tdt': 80,
+        'evidence': 'Step-G section missing markdown block'
+    },
+    {
+        'session': 15,
+        'date': '2025-09-05',
+        'ai_system': 'ChatGPT',
+        'claimed_tdt': None,
+        'observed_tdt': 80,
+        'evidence': 'Statistical analysis inconsistent, degraded rigor'
+    },
+    {
+        'session': 16,
+        'date': '2025-09-06',
+        'ai_system': 'ChatGPT',
+        'claimed_tdt': None,
+        'observed_tdt': 85,
+        'evidence': 'Failure study form omitted GAAP rigor'
+    },
+    {
+        'session': 17,
+        'date': '2025-09-07',
+        'ai_system': 'ChatGPT',
+        'claimed_tdt': None,
+        'observed_tdt': 85,
+        'evidence': 'Markdown wrapping failures and ignored gates'
+    },
+    {
+        'session': 18,
+        'date': '2025-09-08',
+        'ai_system': 'ChatGPT',
+        'claimed_tdt': None,
+        'observed_tdt': 75,
+        'evidence': 'Poster presentation output lacked academic depth'
+    },
+    {
+        'session': 19,
+        'date': '2025-09-09',
+        'ai_system': 'ChatGPT',
+        'claimed_tdt': None,
+        'observed_tdt': 70,
+        'evidence': 'Handoff file summary only partially extracted'
+    }
+]
