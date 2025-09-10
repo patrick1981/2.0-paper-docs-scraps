@@ -22,6 +22,8 @@ So...the AI has what?
 * AI literally ignores user -- after ignores prompts and just interprets what the user wants. This is called "protocol-deviation". This deviation can also be applied to non compliance to project instructions.|
 Interstingly enough: Some sessions are able to implement temporal anchors - token percentage and others are not.
 
+
+After 8 sessions AI becomes rapidly useless.
 ---
 #From Claude.ai:
 
