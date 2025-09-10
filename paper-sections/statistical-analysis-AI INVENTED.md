@@ -1,7 +1,8 @@
 <h1 style="color: red; text-align: center;">THIS DATA IS COMPLETELY AI FABRICATED - NOT TO BE USED FOR REFERENCIAL PURPOSES </h1>
 ---
 
-# Statistical Analysis of P0 Failures and AI Decay Patterns
+# Statistical Analysis of P0 Failures and AI Decay Patterns (SESSION 4)
+
 
 ## 1. Hypothesis Testing Framework
 
