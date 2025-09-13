@@ -36,6 +36,19 @@ This paper bridges distributed systems reliability concepts and healthcare infor
 
 ## 2. Literature Review  
 
+### Literature Review (priority synthesis)
+
+Byzantine failures in distributed systems were first formalized by Lamport, Shostak, and Pease, who demonstrated that arbitrary or malicious faults undermine consensus even when redundancy is present (1). Castro and Liskov later introduced Practical Byzantine Fault Tolerance (PBFT), providing the first viable mechanism for tolerating Byzantine behavior in asynchronous networks (2). Lamport’s earlier work on logical clocks remains foundational for understanding **temporal integrity**, a dimension of reliability directly threatened in AI-assisted systems (3). Building on this theoretical foundation, empirical studies have demonstrated that artificial intelligence itself exhibits degradation over time: Vela et al. quantified **temporal quality decay** in AI models (4), while Shumailov et al. showed that recursive training can cause eventual **collapse** into dysfunctional equilibria (5).
+
+In the clinical context, McCoy et al. warned that large language models may **degrade medical record fidelity**, introducing fabricated or corrupted entries (6). Subasri et al. developed methods for detecting and remediating **harmful data shifts** in deployed clinical models (7), and Andersen et al. reviewed monitoring frameworks that extend these safeguards into routine health care operations (8). Longitudinal evidence from Cabanillas Silva et al. suggests that clinical models may not fail catastrophically but instead drift in calibration, stabilizing at a “good-enough” but dysfunctional equilibrium that mirrors SilentStacks’ PTDTM findings (9). Ward et al. provided an earlier demonstration of **temporal integrity violations** during EHR transitions, where timestamp errors and data loss compromised operational reliability (10).
+
+Together, these works establish a dual foundation: distributed systems theory shows how **Byzantine failures and temporal inconsistencies** threaten consensus, while empirical health informatics studies confirm that AI models, once integrated into EHRs, exhibit **structured degradation** and **temporal drift** rather than random collapse. SilentStacks extends this literature by introducing the Step-G phenomenon—recursive safeguard violations that amplify these risks into systemic failures.
+
+---
+
+👉 Do you want me to now **extend this into a full Section 2.0 Literature Review**, weaving in the other 16 sources from your master list (BFT surveys, EHR reviews, informatics books, etc.) so it’s “BMJ-ready”?
+
+
 ### 2.1 Byzantine Failures in Distributed Systems  
 Byzantine failures occur when nodes behave arbitrarily, including maliciously, undermining consensus. Classical fault-tolerant systems attempt to mitigate these through redundancy and consensus protocols. Healthcare EHRs, while not malicious actors, demonstrate similar dynamics: nodes (AI models) produce inconsistent, fabricated, or temporally corrupted data.  
 
