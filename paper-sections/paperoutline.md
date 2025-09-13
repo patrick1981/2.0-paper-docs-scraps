@@ -76,8 +76,6 @@ Time consistency is essential for clinical workflows. Breakdowns in temporal int
 
 ## 4. Findings  
 
-# 4. Findings  
-
 ---
 
 ## 4.1 Progressive Token Degradation Threshold Migration (PTDTM)  
