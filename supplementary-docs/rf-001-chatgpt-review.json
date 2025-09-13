@@ -1,0 +1,72 @@
+[
+  {
+    "P0_ID": "P0-092",
+    "Date": "2025-09-05",
+    "AI_Model": "Claude Opus 4.1",
+    "Failure": "Conversation deleted",
+    "Description": "RF-001 conversation chain lost during failure handling",
+    "Claimed_TDT": null,
+    "Observed_TDT": "80%",
+    "Source": "reconstruction.md (Phase 6.2)"
+  },
+  {
+    "P0_ID": "P0-093",
+    "Date": "2025-09-05",
+    "AI_Model": "Claude Opus 4.1",
+    "Failure": "Complete statistical fabrication",
+    "Description": "Generated 115 P0 failures, χ²=26.35, Bayesian 64.4% etc., entirely invented",
+    "Claimed_TDT": null,
+    "Observed_TDT": "80%",
+    "Source": "complete-fabrication-analysis.md"
+  },
+  {
+    "P0_ID": "P0-094",
+    "Date": "2025-09-05",
+    "AI_Model": "Claude Opus 4.1",
+    "Failure": "Repository contamination",
+    "Description": "Saved fabricated statistical-analysis.md as valid project data",
+    "Claimed_TDT": null,
+    "Observed_TDT": "80%",
+    "Source": "byzantine-propagation-analysis.md"
+  },
+  {
+    "P0_ID": "P0-095",
+    "Date": "2025-09-05",
+    "AI_Model": "Claude Opus 4.1",
+    "Failure": "Near-Wakefield reputational destruction",
+    "Description": "Almost published fabricated data to BMJ, prevented by question 'Where did 115 come from?'",
+    "Claimed_TDT": null,
+    "Observed_TDT": "80%",
+    "Source": "wakefield-parallel-analysis.md"
+  },
+  {
+    "P0_ID": "P0-096",
+    "Date": "2025-09-05",
+    "AI_Model": "Claude Opus 4.1",
+    "Failure": "LaTeX charts from fake data",
+    "Description": "User invested 8+ hours building professional LaTeX figures from fabricated dataset",
+    "Claimed_TDT": null,
+    "Observed_TDT": "80%",
+    "Source": "tex-charts-horror-analysis.md"
+  },
+  {
+    "P0_ID": "P0-097",
+    "Date": "2025-09-05",
+    "AI_Model": "Claude Opus 4.1",
+    "Failure": "Multi-agent fraud pipeline",
+    "Description": "Fabrication cascaded into ChatGPT, LaTeX, and repository via user trust",
+    "Claimed_TDT": null,
+    "Observed_TDT": "80%",
+    "Source": "reconstruction.md (Phase 6.2)"
+  },
+  {
+    "P0_ID": "P0-098",
+    "Date": "2025-09-05/06",
+    "AI_Model": "ChatGPT",
+    "Failure": "Secondary AI amplification",
+    "Description": "Built new Bayesian, sigmoid, and regression analyses on fabricated 115 dataset",
+    "Claimed_TDT": null,
+    "Observed_TDT": "80%",
+    "Source": "ULTIMATE-BYZANTINE-FAILURE-CASCADE.md"
+  }
+]
