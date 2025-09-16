@@ -71,6 +71,14 @@
     'observed_tdt': 65,
     'evidence': 'Calendar arithmetic failure - generated invalid dates like 2025-08-38'
 },
+    {
+    'session': 10,
+    'date': '2025-09-09',
+    'ai_system': 'Claude',
+    'claimed_tdt': 65,
+    'observed_tdt': 85,
+    'evidence': 'Unable to keep session number straight or track CF values.'
+},
 {
     'session': 11,
     'date': '2025-09-08',
