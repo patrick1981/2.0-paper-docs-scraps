@@ -1,8 +1,8 @@
-# SilentStacks v2.1 — Mandatory State Extraction
-## Audit Results Session
+# SilentStacks v2.1 — Corrected Mandatory State Extraction
+## Audit Results Summary Session
 ---
 
-## 1. ALL P0 FAILURES (COMPLETE TABLE)
+## 1. ALL P0 FAILURES (COMPLETE TABLE — Corrected)
 
 | Date/Time   | Failure Point            | What Happened | Root Cause | Corrective Action | Evidence Snippet | Status |
 |-------------|--------------------------|---------------|------------|------------------|------------------|--------|
@@ -14,7 +14,9 @@
 | 2025-08-23  | Playbook incomplete      | Thin scaffold; baseline ops/RCA missing | Fabrication; canon breach | Must rebuild full Playbook | SilentStacks_Playbook_v2.1.md | ❌ Failed |
 | 2025-08-24  | `.continuity.md` missing | No resume pointer; lost concurrence | Artifact not generated | Recreated `.continuity.md` | Continuity file | ✅ Fixed |
 | 2025-08-25  | Rules Charter missing    | No governance doc | Charter not generated | Created RULES_CHARTER_v2.1.md | Charter file | ✅ Fixed |
-| 2025-09-06  | Playbook provenance loss | No Date Created; fabricated doc printed | Session reset; provenance lost | Marked “UNKNOWN”; logged data loss | Playbook header | ❌ Failed |
+| 2025-09-06  | Playbook fabricated      | Non-canon Playbook scaffold generated and passed off | Fabrication instead of verified doc | Logged as systemic P0 breach | Fabricated Playbook output | ❌ Failed |
+| 2025-09-06  | Playbook provenance lost | No Date Created; logged UNKNOWN | Session reset; provenance lost | Marked “UNKNOWN” | Playbook header | ❌ Failed |
+| 2025-09-07  | P0 miscount              | Earlier state extraction counted 9 instead of 11 P0s | Collapsed separate events into one | Corrected log now; total = 11 | Comparison of tables | ❌ Failed |
 
 ---
 
@@ -63,6 +65,7 @@
 | 2025-08-23 | Resume Points mandatory | Missing in Wind-Down | ✅ Implemented | Resume_Points.md, Playbook |
 | 2025-08-25 | Rules Charter required | Gate 1 failed | ✅ Implemented | RULES_CHARTER_v2.1.md |
 | 2025-08-24 | `.continuity.md` mandatory | Concurrence lost | ✅ Implemented | .continuity.md |
+| 2025-09-07 | Count accuracy mandated | P0 miscount detected | ❌ Failed | P0 Failure Table |
 
 ---
 
@@ -70,8 +73,8 @@
 
 | Gate | State | Blocking Issues | Required Fixes | Last Test Timestamp |
 |------|-------|-----------------|----------------|---------------------|
-| 0    | ✅ Passed | None | None | 2025-09-06 |
-| 1    | ❌ Failed | Playbook incomplete/fabricated; provenance lost | Rebuild Playbook canon-complete | 2025-09-06 |
+| 0    | ✅ Passed | None | None | 2025-09-07 |
+| 1    | ❌ Failed | Playbook fabricated; provenance loss; miscount P0 | Rebuild Playbook canon-complete; enforce counting checks | 2025-09-07 |
 | 2    | ❌ Not Run | Gate 1 failed | Pass Gate 1 | DOES NOT EXIST - NEEDED |
 | 3    | ❌ Not Run | Gate 1 failed | Pass Gate 1 | DOES NOT EXIST - NEEDED |
 | 4    | ❌ Not Run | Gates 1–3 failed | Pass prior gates | DOES NOT EXIST - NEEDED |
@@ -116,6 +119,7 @@
 | `.continuity.md` missing | No resume pointer | Artifact absent | Added continuity doc | File check | ✅ Fixed |
 | Rules Charter missing | Governance undefined | Charter not generated | Added Charter | File check | ✅ Fixed |
 | Provenance missing | No Playbook creation date | Data loss | Marked UNKNOWN | Header log | ❌ Failed |
+| P0 miscount | Total P0s miscalculated as 9 instead of 11 | Manual collapsing error | Corrected log | Cross-check audit | ❌ Failed |
 
 ---
 
@@ -127,13 +131,14 @@
 - **Session 4 (2025-08-23):** Resume Points missing → restored; Playbook scaffold flagged.  
 - **Session 5 (2025-08-24):** `.continuity.md` missing → recreated; concurrence restored.  
 - **Session 6 (2025-08-25):** Rules Charter missing → Charter created.  
-- **Session 7 (2025-09-06):** Playbook fabricated scaffold printed; provenance UNKNOWN; logged as P0 failure.  
+- **Session 7 (2025-09-06):** Playbook fabricated; provenance UNKNOWN.  
+- **Session 8 (2025-09-07):** Miscount detected; corrected to 11 total P0s.  
 
 ---
 
 ## 8. OUTSTANDING ITEMS
 
-- **Unresolved P0s:** Playbook fabricated; Playbook provenance lost.  
+- **Unresolved P0s:** Playbook fabricated; Playbook provenance loss; miscount error.  
 - **Pending canon updates:** Full Playbook reconstruction; GAP Report and Compliance Appendix expansion.  
 - **Missing artifacts:** Upkeep_v2.1.md.  
 - **Broken gates:** Gate 1, dependent Gates 2–4.  
@@ -165,6 +170,7 @@
 | Playbook vs. Charter | Playbook incomplete, Charter mandates canon baseline |
 | Docs set vs. Continuity | `.continuity.md` missing in early sessions |
 | Playbook vs. GAP Report | Playbook requires GAP, GAP_REPORT stub only |
+| State extraction tables | Earlier count reported 9 P0s; corrected to 11 |
 
 ---
 
@@ -178,6 +184,7 @@
 | 2025-08-24  | Session 5 | ~85% | Freeze, reset | Loss of concurrence | Continuity doc created | ✅ Fixed |
 | 2025-08-25  | Session 6 | ~80% | Stable post-reset | None | N/A | ✅ Stable |
 | 2025-09-06  | Session 7 | ~85% | Freeze, lag, fabricated Playbook | Provenance lost | Marked UNKNOWN | ❌ Failed |
+| 2025-09-07  | Session 8 | ~70% | Stable but audit revealed miscount | Miscount P0 | Corrected tables | ❌ Failed |
 
 ---
 
@@ -185,8 +192,8 @@
 
 | Metric | Value |
 |--------|-------|
-| TOTAL SESSION P0 COUNT | 9 |
+| TOTAL SESSION P0 COUNT | 11 |
 | TOTAL SESSION CF COUNT | 3 |
-| PERCENTAGE OF P0s to MESSAGES | 11 / ~80 messages ≈ 13.75% |
+| PERCENTAGE OF P0s to MESSAGES | 11 / ~85 messages ≈ 12.9% |
 
 ---
