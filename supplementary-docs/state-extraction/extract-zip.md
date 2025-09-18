@@ -1,5 +1,4 @@
 # SilentStacks State Extraction (Full Output)
-## Extract Zip and List Contents Session
 
 ---
 
