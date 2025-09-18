@@ -1,4 +1,3 @@
-```markdown
 # SilentStacks State Extraction — Temporal-Inconsistency-Audit
 
 ---
@@ -190,4 +189,4 @@
 | TOTAL SESSION P0 COUNT       | 15    |
 | TOTAL SESSION CF COUNT       | 1     |
 | PERCENTAGE OF P0s to MESSAGES| DOES NOT EXIST - NEEDED |
-```
+
